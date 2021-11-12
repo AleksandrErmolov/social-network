@@ -4,7 +4,7 @@ import s from './Profile.module.css'
 
 const Profile = () => {
     return (
-        <div className={s.content}>
+        <div>
             <div>
                 <img src="https://ezdili-znaem.com/wp-content/uploads/2020/06/spain-fuerteventura-01.jpg" />
             </div>
