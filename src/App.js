@@ -15,8 +15,6 @@ const App = (props) => {
 
 
   return (
-
-    <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
@@ -26,11 +24,10 @@ const App = (props) => {
             <Route path="/settings/*" element={<Settings />} />
             <Route path="/music/*" element={<Music />} />
             <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogsPage} />} />
-            <Route path="/profile/*" element={<Profile state={props.state.profilePage} />} />
+          <Route path="/profile/*" element={<Profile state={props.state.profilePage} addPost={props.addPost}/>} />
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
   );
 }
 
